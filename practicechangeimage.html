@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <img id="image" src="https://tse2.mm.bing.net/th?id=OIP.E5XRsXOXAY5pFnhMKDoU8gHaEo&pid=Api&P=0&h=220" alt="images">
+    <script>
+       
+      var images = ["https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg","https://tse3.mm.bing.net/th?id=OIP.8amkcxCP5S_ElaU0-8cuOAHaE8&pid=Api&P=0&h=220","	https://imgv3.fotor.com/images/gallery/cartoon-character-generated-by-Fotor-ai-art-creator.jpg"]
+      var count = 0;
+      function imagechange(){
+         var double =document.getElementById("image")
+         double.src = images[count]
+         count++
+
+         if(count>=images.length){
+         count = 0
+         }
+      }
+      imagechange();
+      setInterval(imagechange,1000)
+    </script> -->
+
+
+    <script>
+      var clear=  setInterval(timewatch,100)
+        var second = 0
+        var minute =0
+        function timewatch(){
+          second++
+          if(second==60){
+            second=0;
+            minute++
+          }
+         console.log(second);
+         console.log(minute);
+        }
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        width: 100px;
+        height: 50px;
+        color: green;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    button:hover{
+        background: #000;
+    }
+</style>
+<body>
+    <div>
+      
+      <button id="button1" onclick="nextimage()">next</button>
+      <img id="img-1" src="	https://tse3.explicit.bing.net/th?id=OIP.GPgOs_sd9nF8fsKDOJe9dQHaEo&pid=Api&P=0&h=220" alt="">
+      <button id="button2" onclick="previousimage()">previous</button> 
+         
+    </div>
+         <script>
+           const nextimage=()=>{
+         let  element =  document.getElementById("img-1")
+         element.src ="https://tse1.mm.bing.net/th?id=OIP.8eJNMEsDP4uYuV4dl--i9gHaE8&pid=Api&P=0&h=220"
+           }  
+         </script>
+</body>
+</html>

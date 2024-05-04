@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj ={
+        //     name : "proskill"
+           
+        // }
+        // obj2 ={
+        //         firstname :"sankalp",
+        //         lastname : "tiwari",
+        //         obj:obj
+        //     }
+
+       
+        // console.log(obj2)
+   
+        let sankalp = {
+            name:"sankalp",
+            email: "tiwari@gmail.com",
+             rollno : 234,
+        }
+
+        let sankalp1 = {
+            name1:"sankalp11111111111",
+            email1: "tiwari@gmail.com",
+             rollno1 : 234,
+        }
+
+
+        sankalp1.__proto__=sankalp
+
+       let key = Object.keys(sankalp)
+      console.log( Object.keys(sankalp))
+      console.log(Object.values(sankalp))
+  
+      for(a in sankalp){
+        document.write(sankalp[a])
+
+       }
+    //   for(let i=0;i<=key.length-1;i++){
+    //     keys =key[i]
+    //     document.write(sankalp[keys])
+    //   }
+    
+   
+
+    
+     
+    </script>
+</body>
+</html>

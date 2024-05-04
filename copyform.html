@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .error{
+    color: red;
+   }
+</style>
+<body>
+  <form action="validform" onsubmit=" return validation()" >
+    <label for="name">NAME:</label><br>
+     <input type="text"  id="name" name="name"><br>
+     <span class="error" id="nameError"></span><br>
+
+     <label for="number">NUMBER:</label><br>
+     <input type="number"  id="number" name="name"><br>
+     <span class="error" id="numberError"></span><br>
+
+     <label for="name">ADDRESS:</label><br>
+     <textarea name="address" id="address" ></textarea><br>
+     <span class="error" id="addressError"></span><br>
+
+    <input type="button" value="submit">
+  </form>
+  <script>
+    function validation(){
+  var name =  document.getElementById("name").value
+ var number =   document.getElementById("number").value
+ var address=   document.getElementById("address").value
+
+
+ var nameError =  document.getElementById("nameError")
+ var numberError =   document.getElementById("numberError")
+ var addressError=   document.getElementById("addressError")
+
+ nameError.innerHTML =""
+ numberError.innerHTML =""
+ addressError.innerHTML =""
+   
+ var isValid =true;
+
+ if(name==""){
+  nameError.innerHTML ="name is required"
+  isValid = false;
+ }
+ else if(number==""){
+   numberError.innerHTML="number is required"
+   isValid=false;
+ }else if(address==""){
+     addressError.innerHTML=""
+     isValid = false;
+ 
+ } return isValid
+    }
+  </script>
+</body>
+</html>

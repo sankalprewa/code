@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //// example 1
+        // const promiseone = new Promise(function(resolve,reject){
+        //     setTimeout(function(){
+        //      console.log('async task is completed');
+        //      resolve()
+        //     },1000)
+        // })
+        // promiseone.then(function(){
+        //     console.log('promise is consumed');
+        // })
+/// example 2
+        //  const promisetwo = new Promise((resolve, reject) => {
+        //     setTimeout(()=>{
+        //   resolve({name:"sankalp",email:"tiwari@gmail.com",id:"456876"})
+        //     },1000)
+        //  })
+        //  promisetwo.then((data)=>{
+        //     console.log(data);
+        //  })
+     // example 3
+     
+    //  new Promise(()=>{
+    //     setTimeout(()=>{
+    //          console.log("asyn is solved");
+    //     },1000)
+    //  }).then(()=>{
+    //     console.log("asyn 2 is resolved");
+    //  })
+
+    //example 4 
+      const promisefour = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        const error = true;
+        if(!error){
+            resolve({name:"sankalp",id:"8765"})
+        }
+        else{
+            reject('Error: error not found')
+        }
+        },1000)
+      })
+      promisefour.then((data)=>{
+        console.log(data);
+      }).catch((err)=>{
+        console.log(err);
+      }).finally(()=>{
+        console.log("finally executed ");
+      })
+    </script>
+</body>
+</html>
