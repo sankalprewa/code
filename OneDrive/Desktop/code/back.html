@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body {
+        background-color: blue; /* Initial background color */
+      }
+      .container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff; /* Button color */
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3; /* Button color on hover */
+      }
+      .black-bg {
+        background-color: rgb(255, 0, 0) !important; /* Change background color to black */
+      }
+ 
+    </style>
+  </head>
+  <body id="xyz">
+ 
+  <h1 id="first">Hello Good morning</h1>
+    <div class="container">
+      <button id="ChangeColor" onclick="changecolor()">Changecolor</button>
+      
+    </div>
+    <script>
+       
+      const changecolor = ()=>{
+        document.getElementById("xyz").classList.toggle("black-bg")
+      
+      }
+      
+     
+      </script>
+
+ 
+
+    
+</body>
+</html>

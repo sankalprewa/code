@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    #font-size{
+        cursor: pointer;
+        color: darkblue;
+    }
+
+    .size{
+        font-size: 30px;
+    }
+ </style>
+<body>
+    <div>
+        <p id="font-size", onmouseover="changefontsize()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolore?</p>
+    </div>
+    <script>
+        const  changefontsize = ()=> {
+          document.getElementById("font-size").classList.toggle("size")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<html>
+    <style>
+        body {
+          background-color: white; /* Initial background color */
+        }
+        .container {
+          text-align: center;
+          margin-top: 50px;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #007bff; /* Button color */
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #0056b3; /* Button color on hover */
+        }
+        .black-bg {
+          background-color: black !important; /* Change background color to black */
+        }
+      </style>
+    </head>
+    <body> 
+      <div class="container">
+        <button id="Changetext" onmouseover="changecolor()">Change flower</button>
+      </div>
+    
+      <script>
+          //  question = 2
+//______//// example 1 ____________________________________________
+
+        const changecolor = ()=>{ 
+         let element = document.getElementById("first") 
+          alert("this is write match") 
+        } 
+
+        // ________________example 2___________________________
+
+        document.getElementById("Changetext").addEventListener("mouseover",function(){
+                   alert("wow this is good")
+        })
+      </script>
+</body>
+</html> 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const information ={
+        //     name : "sankalp",
+        //     fullname : "sankalp tiwari",
+        //     email : "tiwarisankalp6924@gmail.com",
+        //     age : 20,
+        //     cource:"BBA"
+            
+        // }
+    //     console.log(information);
+    //     information.name = "siddharth";
+       
+    //    // Object.freeze(information)
+    //     information.phone =9934560249;
+            
+        ///// Adding function in object
+//   ////example 1
+//         information.new = function(){
+//             console.log("hello js user")
+//         }
+//         console.log(information.new());
+          
+
+        ////example 2
+        // information.new1 = function(){
+        //     console.log('hello developer' )
+        // }
+        // console.log(information.new1());
+          
+
+        //// 2nd way  of declaration a object (single ton object)
+        // const obj = new Object()
+
+        // obj.name = "sankalp"
+        // obj.age = 20
+        // obj.Id = "wer345"
+        // console.log(obj);
+     
+
+        ///// nexting in object when we give a objects under the objects is called nexted object
+
+        //  const sankalp ={
+        //     email:"tiwej@gmail.com",
+        //     username :{
+        //       fullusername :{
+        //         firstname :"sankalp",
+        //         lastname:"tiwari"
+        //       }
+        //     }
+        //  }
+
+        //  console.log(sankalp.username);
+        //  console.log(sankalp.username.fullusername)
+        //  console.log(sankalp.username.fullusername.firstname);
+       
+
+         ///// Assining a object  
+
+         let obj1 ={
+            name :"sankalp",
+            id :"abc!@3",
+            cource : "BBA"
+         }
+
+        
+         let obj2 ={
+            name :"siddharth",
+            id :"abc!@2",
+            cource : "Bca"
+         }
+
+        let obj3 = Object.assign(obj1 , obj2);
+        console.log(obj3);
+
+    // const obj3 = {...obj1,...obj2}
+    // console.log(obj3);
+
+    // console.log(Object.keys(obj1));
+    // console.log(Object.values(obj1));
+    // console.log(Object.entries(obj1));
+
+    </script>
+</body>
+</html>

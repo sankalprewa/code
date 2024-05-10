@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <script>
+////// IN foreach method we can not use return keyword
+    //    const array = ["java","python","rubi","c++","javascript"]
+    //    const newarray = array.forEach((item,index) => {
+    //       console.log(item,index)
+    //    });
+ 
+
+    // filter method is purely based on condition statement 
+// // example 1
+//        const array = [1,2,3,4,5,6,7,8,9]
+//        const newarray = array.filter((item) => item > 4 ); 
+//        console.log(newarray);
+
+//    //example 2
+//    const array1 = [1,2,3,4,5,6,7,8,9]
+//        const newarray1 = array.filter((item) => {
+//            return item > 4
+//        });
+//        console.log(newarray1)
+    
+// example 3
+// let arr =[
+//     {
+//         language : "python",
+//         year : 1992,
+//         coding : "basic"
+//     },
+//     {
+//         language : "java",
+//         year :2004,
+//         coding : "hard"
+//     },
+//     {
+//         language : "javascipt",
+//         year : 2012,
+//         coding : "middle"
+//     },
+//     {
+//         language : "c++",
+//         year : 2019,
+//         coding : "middle"
+//     }
+  
+// ]
+
+
+
+    //  const arr1 = arr.filter((num) => {
+    //     return num.year > 2000
+
+    //  })
+
+    //  console.log(arr1);
+
+    //  const arr1 = arr.filter((num)=>{
+    //    return num.coding === "middle"
+    //    })
+    //  console.log(arr1);
+     
+//    // // REDUCE()
+
+////example1
+//     const array = [1,2,3,4,5]
+//    const add=  array.reduce((acc,num)=>{
+//         return acc+num
+//     },0)
+//     console.log(add);
+
+
+
+// example 2
+    const purchse =[
+        {
+            cource : "java",
+            price : 1299
+        },
+        {
+            cource : "spoken",
+            price : 1999
+        },
+        {
+            cource : "BBA",
+            price : 12990
+        },
+        {
+            cource : "MBA",
+            price : 7999
+        },
+        {
+            cource : "CA",
+            price : 3999
+        }
+
+    ]
+    const add1 = purchse.reduce((acc,num)=>acc+num.price,0)
+    console.log(add1);
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="currentTime"></div>
+    <script>
+      const element = document.getElementById('currentTime');
+      
+      setInterval(function () {
+        const currentDate = new Date();
+        element.innerText = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+      }, 1000);
+
+
+
+
+      //// question 1 find current day
+let today =new Date();
+let day =today.getDay();
+let daylist =["sunday","monday","tuesday","wednesday","thusday","friday","saturday"]
+   console.log(daylist[day]); 
+
+    //// question no 3 find the leaf year
+    
+   let year =prompt("enter a number")
+   date = parseInt(year)
+    if(date%4==0||date%100==0||date%400==0){
+        console.log("yes");
+    }
+    else{
+        console.log("no");
+    }
+    </script>
+</body>
+</html>

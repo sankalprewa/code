@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [4, 5, 8, 9, 7, 12, 13];
+
+        let users = [
+            {
+                id: 1,
+                name: "John Doe",
+                age: 30,
+                email: "john.doe@example.com",
+                city: "New York",
+            },
+            {
+                id: 2,
+                name: "Jane Smith",
+                age: 25,
+                email: "jane.smith@example.com",
+                city: "Los Angeles",
+            },
+            {
+                id: 3,
+                name: "Alice Johnson",
+                age: 35,
+                email: "alice.johnson@example.com",
+                city: "Chicago",
+            },
+            {
+                id: 4,
+                name: "Bob Brown",
+                age: 28,
+                email: "bob.brown@example.com",
+                city: "Houston",
+            },
+            {
+                id: 5,
+                name: "Emily Davis",
+                age: 32,
+                email: "emily.davis@example.com",
+                city: "Miami",
+            },
+            {
+                id: 6,
+                name: "Michael Wilson",
+                age: 40,
+                email: "michael.wilson@example.com",
+                city: "San Francisco",
+            },
+            {
+                id: 7,
+                name: "Sarah Martinez",
+                age: 27,
+                email: "sarah.martinez@example.com",
+                city: "Seattle",
+            },
+            {
+                id: 8,
+                name: "David Taylor",
+                age: 33,
+                email: "david.taylor@example.com",
+                city: "Boston",
+            },
+            {
+                id: 9,
+                name: "Olivia Thompson",
+                age: 29,
+                email: "olivia.thompson@example.com",
+                city: "Atlanta",
+            },
+            {
+                id: 10,
+                name: "Daniel Anderson",
+                age: 31,
+                email: "daniel.anderson@example.com",
+                city: "Dallas",
+            },
+        ];
+
+
+
+        //    function  myfunction(number,index){
+        //         console.log(`number is${number} index is ${index}`)
+        //     };
+
+        //     for(let i=0 ; i<=a.length; i++){
+        //         myfunction(a[i] ,i)
+        //     }
+
+        // ................foreach,,,,,,,,,,,,,,,,,,,
+
+        // function myfunction(number,index){
+        //             console.log(`number is${number} index is ${index}`)
+        //         };
+        //  a.forEach(myfunction);
+
+        // a.forEach(function(number ,index){
+        //     console.log(`number is${number} index is ${index}`)
+        // })
+
+        //   ..........................use  functionn  anny.........................
+
+        // users.forEach(function(user){
+        //     console.log(user)
+        //      document.write(user.name )
+        // })
+
+        //   ..........................use for of loop.........................
+
+        //  for (let i of users){
+        //     console.log();
+        //     document.write(i.name)
+        //  }
+        //   ..........................use arror functionn.........................
+
+        //  users.forEach((user)=>{
+        //      document.write(user.name)
+        //  })
+
+        //   ..................................map methods ........................
+
+        // function myfun(number) {
+        //     console.log(number * 2)
+        //     return number * 3
+
+        // }
+        // squerofnuberis = a.map(myfun)
+        // document.write(squerofnuberis)
+
+        //   ..........................use normal functionn.........................
+
+        // let b = a.map(function (number) {
+        //     return number * number
+        // })
+        // console.log(b);
+
+        //   ..........................use arror functionn.........................
+
+        //   let b = a.map((number) =>{
+        //             return number * number
+        //         })
+        //         console.log(b);
+        //   ..........................use object.........................
+
+        // let data=users.map(function(user){
+        //         return user.name
+        //         })
+
+        // console.log(data);
+        // note.......................
+
+        // In JavaScript's map() method, it's necessary to use the return keyword within the callback function. If the return keyword isn't used, the function will default to returning undefined. Therefore, to ensure that each element of the array is correctly transformed and a new array with these transformed elements is returned, the return keyword must be used.
+
+        //   .......................use of filter method.......................
+
+
+
+
+        //   let iseven = function (number) {
+        //     return number % 2 == 0;
+        //     // their callback always return a boolen value
+        //   };
+        //   let number = a.filter(iseven);
+        //   console.log(number);
+
+        //   ..........................use arror functionn.........................
+
+
+
+        // let number = a.filter((number) => {
+        //     return number % 2 == 0
+        // })
+        // console.log(number);
+
+
+        //       In this code:
+
+        // The isEven function checks whether a number is even by checking if the remainder when divided by 2 is equal to 0.
+
+        // The filter method is used to create a new array (numbers) containing only the elements of a for which the isEven function returns true.
+
+        // Finally, console.log(numbers) prints the new array containing only the even numbers from a.
+
+
+
+
+
+        //   ..........................use reduce.........................
+
+
+        //         let sum = a.reduce((lastvalue ,firstvalue)=>{
+        // return lastvalue+firstvalue
+        //          })
+        //           console.log(sum);
+
+        let products = [
+            {
+                id: 1,
+                name: "Smartphone",
+                price: 599.99,
+                quantity: 1
+            },
+            {
+                id: 2,
+                name: "Laptop",
+                price: 1299.99,
+                quantity: 2
+            },
+            {
+                id: 3,
+                name: "Headphones",
+                price: 99.99,
+                quantity: 3
+            },
+            {
+                id: 4,
+                name: "Smartwatch",
+                price: 199.99,
+                quantity: 1
+            }
+        ];
+          let sum =products.reduce((totalvalu ,productsprice)=>{
+        return totalvalu+productsprice.price
+                 },0)// Provide an initial value of 0 for the total value
+                  console.log(sum);
+
+
+
+        //                   In this code:
+
+        // reduce method is used to iteratively sum up the prices of all products in the products array.
+        // The callback function takes two parameters: totalvalu (the accumulator) and product (each individual product object in the array).
+        // The initial value for the accumulator is provided as 0 as the second argument of the reduce method.
+        // Inside the callback function, we add the price of each product to the totalvalu.
+        // Finally, the sum variable contains the total sum of all product prices, which is then logged to the console.
+          
+
+
+          
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    [1:47 AM, 4/17/2024] +91 88391 40856:   <style>
+        /* Initial style */
+        body {
+          font-family: Arial, sans-serif; /* Initial font family */
+        }
+      </style>
+    </head>
+    <body onscroll="changeFontOnScroll()">
+    
+      <div id="content">
+        <p>In 1992, Tim Berners-Lee circulated a document titled “HTML Tags,” which outlined just 20 tags, many of which are now obsolete or have taken other forms. The first surviving tag to be defined in the document, after the crucial anchor tag, is the paragraph tag. It wasn’t until 1993 that a discussion emerged on the proposed image tag.
+    
+            Meet Smashing Workshops on front-end, design & UX, with practical takeaways, live sessions, video recordings and a friendly Q&A. With Brad Frost, Stéph Walter and so many others.
+            
+            Jump to the workshops ↬
+            Feature Panel
+            Bursting with imagery, motion, interaction and distraction though it is, today’s World Wide Web is still primarily a conduit for textual information. In HTML5, the focus on writing and authorship is more pronounced than ever. It’s evident in the very way that new elements such as article and aside are named. HTML5 asks us to treat the HTML document more as… well, a document.
+            
+            It’s not just the specifications that are changing, either. Much has been made of permutations to Google’s algorithms, which are beginning to favor better written, more authoritative content (and making work for the growing content strategy industry). Google’s bots are now charged with asking questions like, “Was the article edited well, or does it appear sloppy or hastily produced?” and “Does this article provide a complete or comprehensive description of the topic?,” the sorts of questions one might expect to be posed by an earnest college professor.
+            
+            This increased support for quality writing, allied with the book-like convenience and tactility of smartphones and tablets, means there has never been a better time for reading online. The remaining task is to make the writing itself a joy to read.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, nulla non porttitor placerat, mi justo efficitur nulla, eget feugiat risus urna at libero.</p>
+        <!-- Add more content here -->
+      </div>
+    
+      <script>
+        function changeFontOnScroll() {
+          var content = document.getElementById('content');
+          var scrollPosition = window.scrollY;
+          var windowHeight = window.innerHeight;
+          var contentHeight = content.offsetHeight;
+          console.log("hello")
+          
+          // Check if user has scrolled to the bottom of the page
+          if (scrollPosition + windowHeight >= contentHeight) {
+            content.style.fontFamily = 'Courier New, monospace'; // Change font family
+          } else {
+            content.style.fontFamily = 'Arial, sans-serif'; // Revert to initial font family
+          }
+        }
+      </script>
+    </body>
+    </html>
+    [2:06 AM, 4/17/2024] +91 88391 40856: <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form Validation</title>
+      <style>
+        .error {
+          color: red;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <h2>Form Validation</h2>
+      
+      <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+         <input type="text" id="name" name="name"><br> 
+        <span id="nameError" class="error"></span><br>
+    
+        <label for="number">Number:</label><br>
+        <input type="text" id="number" name="number"><br>
+        <span id="numberError" class="error"></span><br>
+    
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address"></textarea><br>
+        <span id="addressError" class="error"></span><br>
+    
+        <label for="email">Email:</label><br>
+        <input  id="email" name="email"><br>
+        <span id="emailError" class="error"></span><br>
+    
+        <input type="submit" value="Submit">
+      </form>
+    
+      <script>
+        function validateForm() {
+          var name = document.getElementById("name").value;
+          var number = document.getElementById("number").value;
+          var address = document.getElementById("address").value;
+          var email = document.getElementById("email").value;
+    
+          var nameError = document.getElementById("nameError");
+          var numberError = document.getElementById("numberError");
+          var addressError = document.getElementById("addressError");
+          var emailError = document.getElementById("emailError");
+    
+          nameError.innerHTML = "";
+          numberError.innerHTML = "";
+          addressError.innerHTML = "";
+          emailError.innerHTML = "";
+    
+          var isValid = true;
+    
+          if (name == "") {
+            nameError.innerHTML = "Name is required";
+            isValid = false;
+          }
+    
+          if (number == "") {
+            numberError.innerHTML = "Number is required";
+            isValid = false;
+          }
+    
+          if (address == "") {
+            addressError.innerHTML = "Address is required";
+            isValid = false;
+          }
+    
+          if (email == "") {
+            emailError.innerHTML = "Email is required";
+            isValid = false;
+          } else if (!isValidEmail(email)) {
+            emailError.innerHTML = "Invalid email address";
+            isValid = false;
+          }
+    
+          return isValid;
+        }
+    
+        function isValidEmail(email){
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        }
+        
+      </script>
+</body>
+</html>
