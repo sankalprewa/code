@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//    var student = {
+// name : "David Rayy",
+// sclass : "VI",
+// rollno:12};
+// delete student.rollno;
+// console.log(student);
+
+
+var library = [ 
+   {
+       author: 'Bill Gates',
+       title: 'The Road Ahead',
+       readingStatus: true
+   },
+   {
+       author: 'Steve Jobs',
+       title: 'Walter Isaacson',
+       readingStatus: true
+   },
+   {
+       author: 'Suzanne Collins',
+       title:  'Mockingjay: The Final Book of The Hunger Games', 
+       readingStatus: false
+}];
+     
+            // for (let i of  library){
+
+            //     if (i.readingStatus == true){
+            //     document.write(i.author)
+
+            //     }
+            // }
+
+
+
+            for (let i =0 ; i<=library.length-1; i++){
+                  document.write(library[i].readingStatus)
+            
+            if(library[i].readingStatus==false){
+                document.write(library[i].author)
+            }
+
+        }
+    
+    </script>
+</body>
+</html>
